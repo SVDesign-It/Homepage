@@ -1,60 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>DECODE EDUCATION</title>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/modify.css" rel="stylesheet">
+  <title>Silicon Valley Design-It</title>
 
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <style>
+  #logo{
+    font-size: 25px;
+  }
+  .weight{
+    font-weight: lighter;
+  }
+  #ask{
+    background-color: #f5f5f5;
+  }
+  #load_screen{
+	background: #fff;
+	opacity: 1;
+	position: fixed;
+    z-index:10;
+	top: 0px;
+	width: 100%;
+	height: 1600px;
+ }
+ #load_screen > #loading{
+	color:#FFF;
+	width:120px;
+	height:24px;
+	margin: 300px auto;
+ }
+ .space{
+   padding: 5px;
+ }
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <nav class="navbar navbar-default main">
-  <div class="container-fluid center">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">Brand</a>
-    </div>
+ </style>
+</head>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-
-      <ul class="nav navbar-nav navbar-right">
-        <li><a class="navtext" href="#">HOME</a></li>
-        <li><a class="navtext" href="#">TEAM</a></li>
-        <li><a class="navtext" href="#">STORY</a></li>
-        <li><a class="navtext" href="#">COURSES</a></li>
-        <li><a class="navtext" href="#">DONATE</a></li>
-
-
-
-
+<body>
+<div id="load_screen"><div id="loading">loading document</div></div>
+  <nav class="transparent" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.html" class="brand-logo"><span id="logo">SV<span class="weight">Design-It</span></span></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="commisions.html"class="waves-effect waves-light blue lighten-2 btn z-depth-0">Commisions</a></li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="about.html">About</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="commisions.html">Commisions</a></li>      </ul>
+      <a href="index.html" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center blue-text blue-lighten-2 animated fadeInDown">SV<span class="weight">Design-It</span></h1>
+        <div class="row center">
+          <h5 class="header col s12 light white-text">Graphic Designers all over Silicon Valley<br>in <strong>one</strong> place.</h5>
+        </div>
+        <div class="row center">
+          <a href="about.html"  class="btn-large waves-effect waves-light blue lighten-1"><span class="weight">Get Started</span></a>
+          <a href="#learn"  class="btn-large waves-effect waves-light black-text white z-depth-1">Learn More</a>
+          <div class="space"></div>
+          <a  class="btn-large waves-effect waves-light black-text grey lighten-4 z-depth-1 animated wobble disabled" onclick="Materialize.toast('Decisions Releasing Soon!', 4000)">Join Commision Commitee!</a>
+        </div>
+        <br><br>
+      </div>
+    </div>
+    <div class="parallax"><img src="images/bg2.png" ></div>
+  </div>
+
+  <div class="section" id="ask">
+    <div class="container">
+      <center><h5 class="header col s12 light black-text">Established in 2014, in Cupertino, California.    </h5>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+  <div class="row" id="learn">
+       <div class="col s12 m4">
+         <div class="card medium">
+           <div class="card-image waves-effect waves-block waves-light">
+             <img class="activator" src="images/promo1.jpg">
+           </div>
+           <div class="card-content">
+   <span class="card-title activator grey-text text-darken-4">Membership<i class="material-icons right">more_vert</i></span>
+   <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfvrk7toWFTqjBstyLBvbohVYLNB1J-5grRZd-rmRKyLDX29Q/viewform?c=0&w=1">Join Now!</a></p>
+ </div>
+ <div class="card-reveal">
+   <span class="card-title grey-text text-darken-4">Membership<i class="material-icons right">close</i></span>
+   <p><strong>Design forums</strong> – Get feedback on your designs through a friendly network of Design It members.<br>
+<strong>Design showcases</strong> – Display your designs on specific dates and get chances to work with big time companies.<br>
+<strong>Socials</strong> – Have fun relaxing and hanging out with other members at parks, restaurants, and participate in activities such as bowling, Sky High and Laser Quest.
+</p>
+ </div>
+         </div>
+       </div>
+
+       <div class="col s12 m4">
+         <div class="card medium">
+           <div class="card-image waves-effect waves-block waves-light">
+   <img class="activator" src="images/workshop.png">
+ </div>
+ <div class="card-content">
+   <span class="card-title activator grey-text text-darken-4">Commisions<i class="material-icons right">more_vert</i></span>
+   <p><a href="commisions.html">Get Started!</a></p>
+ </div>
+ <div class="card-reveal">
+   <span class="card-title grey-text text-darken-4">Commisions<i class="material-icons right">close</i></span>
+   <p>Silicon Valley Design It assists local organizations, both student-lead and professional, in designing fliers to promote specific events hosted by the organization.<br>
+     Need a commisions? <a href="commisions.html"class="waves-effect waves-blue btn-flat">Click Here</a></p>
+
+ </div>
+         </div>
+       </div>
+
+       <div class="col s12 m4">
+         <div class="card medium">
+           <div class="card-image waves-effect waves-block waves-light">
+   <img class="activator" src="images/workshops.jpg">
+ </div>
+ <div class="card-content">
+   <span class="card-title activator grey-text text-darken-4">Workshops<i class="material-icons right">more_vert</i></span>
+   <p><a href="events.html">What's Upcoming?</a></p>
+ </div>
+ <div class="card-reveal">
+   <span class="card-title grey-text text-darken-4">Workshops<i class="material-icons right">close</i></span>
+   <p>Design It hosts workshops and guest speaker events to culminate the community’s digital design interest. We update our members on all upcoming events!
+</p>
+ </div>
+         </div>
+       </div>
+     </div>
+
+   </div>
+ </div>
 
 
-    <img width="100%"src="images/emile-perron-190221.jpg">
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+  <footer class="page-footer blue">
+    <div class="container">
+       <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Silicon Valley Design-It</h5>
+          <p class="grey-text text-lighten-4">Design It is a graphic design association located in the Silicon Valley and encourages individuals to explore digital design. Organized by high school students from Monta Vista, Homestead, Cupertino, and Lynbrook High Schools, Design It strives to build a strong network accessible to every student designer. </p>
+
+
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Info</h5>
+          <ul>
+            <li><a class="white-text" href="https://goo.gl/forms/3kGh4WbuJKeaUEZl2">Join Us</a></li>
+            <li><a class="white-text" href="mailto:svdesignit@gmail.com">Make a Club</a></li>
+            <li><a class="white-text" href="https://goo.gl/forms/nIIcmO9BBz0YETEr1">Commissions</a></li>
+            <li><a class="white-text" href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="https://www.facebook.com/svdesignit">Facebook</a></li>
+            <li><a class="white-text" href="mailto:svdesignit@gmail.com ">Contact Us</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made with <3 at <a class="white-text text-lighten-3" href="http://svdesignit.org">Design-It</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+	var load_screen = document.getElementById("load_screen");
+	document.body.removeChild(load_screen);
+});
+
+function openTab(){
+  window.open("https://docs.google.com/forms/d/e/1FAIpQLSdEyEqZsPzPUu-rF6DtT9piKThGUy02ou56nNk9PVrJ-osKPw/viewform");
+
+}
+</script>
+
   </body>
 </html>
